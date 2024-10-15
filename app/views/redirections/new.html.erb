@@ -1,0 +1,8 @@
+<% if @alert %>
+  <%= @alert %>
+<% end %>
+
+<%= form_for(@redirection) do |f| %>
+  Your URL: <%= f.text_field :url %><br />
+  <%= f.submit %>
+<% end %>
